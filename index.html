@@ -80,6 +80,26 @@
     padding:34px 0 70px;text-align:center;color:var(--muted);font-size:14px
   }
   footer .name{color:var(--cream);font-weight:600}
+
+  /* --- Animations d'entrée + fluidité --- */
+  @media (prefers-reduced-motion: no-preference){
+    @keyframes rise{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    body{animation:fadeIn .6s ease both}
+    .overline,h1,.tagline,.rule{animation:rise 1s cubic-bezier(.2,.75,.2,1) both}
+    h1{animation-delay:.10s}
+    .tagline{animation-delay:.22s}
+    .rule{animation-delay:.34s}
+    .card{animation:rise .95s cubic-bezier(.2,.75,.2,1) both}
+    .grid .card:nth-child(1){animation-delay:.42s}
+    .grid .card:nth-child(2){animation-delay:.52s}
+    .grid .card:nth-child(3){animation-delay:.62s}
+    .grid .card:nth-child(4){animation-delay:.72s}
+    .grid .card:nth-child(5){animation-delay:.82s}
+  }
 </style>
 </head>
 <body>
