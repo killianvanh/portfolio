@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Philippe Le Roy Architectes — Architecture résidentielle & publique | Nyon, La Côte</title>
+<meta name="description" content="Atelier d'architecture à Nyon. Projets résidentiels et publics sur La Côte et en Suisse romande. Architecte SIA, diplômé de l'EPFZ. Développement de projets, transformations et réalisations.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230C151E'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' font-weight='600' fill='%23C9A36A' text-anchor='middle'%3ELR%3C/text%3E%3C/svg%3E">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css?v=21">
+<link rel="preload" as="image" href="assets/hero-1280.webp?v=8" imagesrcset="assets/hero-960.webp?v=8 960w, assets/hero-1280.webp?v=8 1280w, assets/hero-1920.webp?v=8 1920w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero-cutout.webp?v=8" fetchpriority="high">
+<style>
+  /* surcouche Le Roy — direction artistique crépuscule */
+  .hero-base,.hero-front{object-position:50% 26%}
+  .hero-title{bottom:22vw;font-size:20vw;letter-spacing:.006em;font-weight:600;
+    -webkit-mask-image:linear-gradient(180deg,#000 58%,rgba(0,0,0,0) 86%);
+    mask-image:linear-gradient(180deg,#000 58%,rgba(0,0,0,0) 86%);
+    filter:drop-shadow(0 2px 26px rgba(0,0,0,.22))}
+  /* lettres en verre dépoli : montrent la scène floutée + reflet */
+  .hero-title .l{
+    background:linear-gradient(180deg,rgba(255,255,255,.82) 0%,rgba(255,255,255,.52) 50%,rgba(255,255,255,.64) 100%),url("assets/frost.jpg?v=7") center 32%/cover;
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  /* meilleure répartition des cartes (cascade décalée) */
+  .hero-stats{gap:24px}
+  .hero-stats .hstat.float1{margin-right:0;width:252px}
+  .hero-stats .hstat.float2{margin-right:72px;width:226px}
+  .hero-stats .hstat.float3{margin-right:30px;width:240px}
+  /* boutons liquid glass */
+  .hdr-right .btn-blue,.hero .btn-glass{
+    background:rgba(245,240,232,.12);border:1px solid rgba(255,255,255,.42);color:#F6F0E7;
+    -webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.32),0 12px 34px -16px rgba(0,0,0,.45)}
+  .hdr-right .btn-blue:hover,.hero .btn-glass:hover{background:rgba(245,240,232,.2);border-color:rgba(255,255,255,.62)}
+  @media (max-width:880px){ .hero-base,.hero-front{object-position:50% 22%} .hero-title{bottom:auto;top:17svh;font-size:clamp(88px,27vw,210px)} }
+  /* wordmark PHILIPPE LE ROY (logotype hero = LEROY conservé) */
+  .logo .lg-word{font-size:22px;font-weight:300;letter-spacing:.05em;text-transform:uppercase;color:#fff;line-height:1.05}
+  .logo .lg-word b{font-weight:600}
+  .logo .lg-sub{font-size:11.5px;font-weight:400;letter-spacing:.02em;color:var(--text-secondary);margin-top:2px;text-transform:none}
+  .logo .lg-sub2{font-size:9.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--text-tertiary);margin-top:5px}
+  /* tagline */
+  .hero-pitch h1{font-size:clamp(36px,5vw,62px);font-weight:300;line-height:1.04;letter-spacing:-.02em;max-width:none;text-shadow:0 2px 34px rgba(8,16,26,.55)}
+  /* carte Membre SIA */
+  .hstat.hstat-sia{padding:14px 20px}
+  .hstat-sia::after{display:none}
+  .hstat-sia .sia-row{display:flex;align-items:center;gap:11px;margin-bottom:6px}
+  .hstat-sia .ch-flag{flex:none;display:flex}
+  .hstat-sia .sia-title{font-size:14.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+  .hstat-sia > span{font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--text-tertiary)}
+  .hero-stats .hstat.float3{animation:metaIn2 1s var(--ease-out) 1.35s forwards,floatY 7s ease-in-out 3.2s infinite;width:236px}
+</style>
+<script src="assets/main.js?v=9" defer></script>
+</head>
+<body class="loading">
+
+<div class="wipe" id="wipe" aria-hidden="true"><span class="wlogo">LEROY</span></div>
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="word"><span>L</span><span>E</span><span style="margin-left:.16em">R</span><span>O</span><span>Y</span></div>
+  <div class="bar"><i></i></div>
+  <div class="sub">Architecture · Nyon · La Côte</div>
+</div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ======================= HEADER ======================= -->
+<header class="header" id="header">
+  <div class="header-in">
+    <a href="index.html" class="logo" aria-label="Philippe Le Roy Architectes — Accueil">
+      <span class="lg-word">Philippe <b>Le&nbsp;Roy</b></span>
+      <span class="lg-sub">architectes</span>
+      <span class="lg-sub2">Nyon · La Côte</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="projets.html">Projets</a>
+      <a href="eco-construction.html">Éco-construction</a>
+      <a href="equipe.html">Équipe</a>
+    </nav>
+    <div class="hdr-right">
+      <a href="contact.html" class="btn btn-blue">Prendre contact
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="mobile-close" id="mobileClose" aria-label="Fermer le menu">&times;</button>
+  <a class="mlink" href="index.html"><span class="mnum">01</span>Accueil</a>
+  <a class="mlink" href="a-propos.html"><span class="mnum">02</span>À propos</a>
+  <a class="mlink" href="projets.html"><span class="mnum">03</span>Projets</a>
+  <a class="mlink" href="eco-construction.html"><span class="mnum">04</span>Éco-construction</a>
+  <a class="mlink" href="equipe.html"><span class="mnum">05</span>Équipe</a>
+  <a href="contact.html" class="btn btn-blue">Prendre contact</a>
+</div>
+
+<main class="page-enter">
+
+<!-- ======================= HERO ======================= -->
+<section class="hero canvas" id="top">
+  <div class="hero-photo">
+    <img class="hero-base" src="assets/hero-1280.webp?v=8" srcset="assets/hero-960.webp?v=8 960w, assets/hero-1280.webp?v=8 1280w, assets/hero-1920.webp?v=8 1920w" sizes="100vw" width="1920" height="1080" alt="Villa contemporaine au crépuscule sur La Côte — Philippe Le Roy Architectes" fetchpriority="high">
+    <div class="hero-sky" aria-hidden="true"></div>
+    <div class="hero-title" id="heroTitle" aria-hidden="true"><span class="l">L</span><span class="l">E</span><span class="l">R</span><span class="l">O</span><span class="l">Y</span></div>
+    <img class="hero-front" src="assets/hero-cutout.webp?v=8" alt="" aria-hidden="true" fetchpriority="high">
+  </div>
+  <div class="hero-veil"></div>
+  <div class="hero-meta">
+    <div class="hero-meta-in">
+      <div class="hero-pitch">
+        <h1>Architecture<br>réelle &amp; sensible</h1>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-glass">Prendre contact
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="tel:+41766161705" class="hero-phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            076 616 17 05
+          </a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat float1">
+          <div class="hs-top"><span>Expérience</span><span>01</span></div>
+          <b><span data-count="10" data-suffix=" ans">10 ans</span></b>
+          <span>dans l'un des plus grands bureaux genevois</span>
+        </div>
+        <div class="hstat float2">
+          <div class="hs-top"><span>Territoire</span><span>02</span></div>
+          <b><span data-count="3" data-suffix="">3</span></b>
+          <span>cantons : Genève, Vaud et Valais</span>
+        </div>
+        <div class="hstat float3 hstat-sia">
+          <div class="sia-row">
+            <span class="ch-flag" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 32 32"><rect width="32" height="32" rx="5" fill="#D52B1E"/><rect x="13" y="6.5" width="6" height="19" fill="#fff"/><rect x="6.5" y="13" width="19" height="6" fill="#fff"/></svg></span>
+            <b class="sia-title">Membre SIA</b>
+          </div>
+          <span>Société suisse des ingénieurs et architectes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= LE BUREAU (teaser) ======================= -->
+<section class="lb lb-bureau" id="bureau">
+  <div class="lb-sas" aria-hidden="true"></div>
+  <div class="lb-wrap">
+    <div class="bureau-grid">
+      <div class="bureau-txt reveal">
+        <p class="lb-eyebrow">01 — Le bureau</p>
+        <h2 class="lb-title" style="margin-bottom:28px">Philippe <em>Le Roy</em></h2>
+        <p class="lb-lead">Architecte EPFZ indépendant à Nyon depuis 2016, après dix ans dans l'un des grands bureaux genevois. J'accompagne particuliers et collectivités, du logement à l'équipement public, sur Genève, Vaud et le Valais.</p>
+        <div class="bureau-creds">
+          <div class="c"><b>EPFZ</b><span>architecte diplômé</span></div>
+          <div class="c"><b>SIA</b><span>registre suisse</span></div>
+          <div class="c"><b>FR · DE</b><span>bilingue</span></div>
+        </div>
+        <a href="a-propos.html" class="home-more">En savoir plus <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <figure class="bureau-fig reveal" data-plx>
+        <img src="assets/mies-portrait.webp" alt="Intérieur d'une villa conçue par Philippe Le Roy, Mies" loading="lazy" width="1100" height="1650">
+        <figcaption>Villa familiale · Mies</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROJETS (aperçu -> projets.html) ======================= -->
+<section class="lb" id="projets">
+  <div class="lb-wrap">
+    <header class="lb-head reveal">
+      <p class="lb-eyebrow">02 — Projets</p>
+      <h2 class="lb-title">Réalisations &amp; <em>concours</em>.</h2>
+      <p class="lb-lead">Résidentiel, patrimoine et équipements publics sur La Côte et en Suisse romande. Un aperçu, et la sélection complète sur la page Projets.</p>
+    </header>
+    <div class="proj-grid preview">
+      <a class="proj-card reveal" href="projets.html">
+        <div class="proj-cover"><img src="assets/lr-mies-6.webp" alt="Extension d'une villa familiale, Mies" loading="lazy" width="1400" height="930"></div>
+        <div class="proj-info"><span class="proj-num">01</span><h3>Extension d'une villa familiale</h3><p class="proj-place">Mies · Vaud<span class="proj-tag">Transformation</span></p></div>
+      </a>
+      <a class="proj-card reveal" href="projets.html">
+        <div class="proj-cover"><img src="assets/lr-prangins-4.webp" alt="Crèche de Prangins" loading="lazy" width="1400" height="930"></div>
+        <div class="proj-info"><span class="proj-num">02</span><h3>Crèche de Prangins</h3><p class="proj-place">Prangins · Vaud<span class="proj-tag">Public · éco-construction</span></p></div>
+      </a>
+      <a class="proj-card reveal" href="projets.html">
+        <div class="proj-cover"><img src="assets/lr-fechy-5.webp" alt="Collège classé de Féchy" loading="lazy" width="1400" height="930"></div>
+        <div class="proj-info"><span class="proj-num">03</span><h3>Collège classé de Féchy</h3><p class="proj-place">Féchy · Vaud<span class="proj-tag">1er prix</span></p></div>
+      </a>
+      <a class="proj-card reveal" href="projets.html">
+        <div class="proj-cover"><img src="assets/lr-broc-1.webp" alt="Extension de l'école de Broc" loading="lazy" width="1400" height="930"></div>
+        <div class="proj-info"><span class="proj-num">04</span><h3>Extension de l'école de Broc</h3><p class="proj-place">Broc · Fribourg<span class="proj-tag">Concours</span></p></div>
+      </a>
+    </div>
+    <a href="projets.html" class="home-more">Voir tous les projets <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+</section>
+
+<!-- ======================= TERRITOIRE (interlude) ======================= -->
+<section class="lb-terr" data-plx aria-label="Le territoire — La Côte">
+  <img src="assets/territoire.webp" alt="Villa à Luins dans les vignes, au-dessus du lac Léman" loading="lazy" width="2600" height="1950">
+  <div class="terr-q reveal">
+    <p class="lb-eyebrow">Le territoire</p>
+    <blockquote>Bâtir sur La Côte. <em>Entre lac et vignoble.</em></blockquote>
+  </div>
+</section>
+
+<!-- ======================= CTA CONTACT ======================= -->
+<section class="lb lb-cta">
+  <div class="lb-wrap" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+    <p class="lb-eyebrow reveal" style="justify-content:center">Contact</p>
+    <h2 class="lb-title reveal" style="max-width:18ch">Un projet en tête&nbsp;? <em>Parlons-en.</em></h2>
+    <p class="lb-lead reveal" style="margin-left:auto;margin-right:auto">Un agrandissement, une transformation, un permis de construire ou un équipement public : écrivez quelques mots, Philippe vous répond personnellement.</p>
+    <a href="contact.html" class="lb-submit reveal" style="margin-top:34px">Prendre contact
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="lb-foot">
+  <p class="lb-foot-mega" aria-hidden="true">Le Roy</p>
+  <div class="fwrap">
+    <div class="lb-foot-grid">
+      <div class="lb-foot-brand">
+        <b>Le Roy <span>architectes</span></b>
+        <p>Architecture résidentielle et publique sur La Côte et en Suisse romande. Du permis de construire à la réalisation.</p>
+      </div>
+      <div>
+        <h4>Explorer</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="eco-construction.html">Éco-construction</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Route de l'Etraz 20a, 1260 Nyon</li>
+          <li><a href="tel:+41766161705">076 616 17 05</a></li>
+          <li><a href="mailto:info@leroy.archi">info@leroy.archi</a></li>
+          <li style="color:#7E7A70;margin-top:6px">Architecte SIA · diplômé EPFZ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="lb-foot-bottom">
+      <span>© <span id="year">2026</span> Philippe Le Roy Architectes — Tous droits réservés</span>
+      <span>Nyon · La Côte · Suisse romande</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

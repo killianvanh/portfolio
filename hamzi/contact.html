@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &amp; devis gratuit — Hamzi Sàrl | Route de l'Etraz 16, 1267 Vich</title>
+<meta name="description" content="Contactez Hamzi Sàrl pour un devis gratuit : peinture, gypserie, faux plafonds, rénovation de façades. Route de l'Etraz 16, 1267 Vich. Lun-Ven 7h-17h.">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" id="leafletLib"></script>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="loading">
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="word"><span>H</span><span>A</span><span>M</span><span>Z</span><span>I</span></div>
+  <div class="bar"><i></i></div>
+  <div class="sub">Gypserie · Peinture · Faux plafonds</div>
+</div>
+<div class="wipe" id="wipe" aria-hidden="true"><span class="wlogo">HAMZI</span></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ======================= HEADER ======================= -->
+<header class="header" id="header">
+  <div class="header-in">
+    <a href="index.html" class="logo-img" aria-label="Hamzi Sàrl — Accueil">
+      <img src="assets/logo.webp" alt="Logo Hamzi Sàrl — Gypserie, Peinture, Faux Plafond" width="224" height="58">
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hdr-right">
+      <a href="contact.html" class="btn btn-blue">Devis gratuit
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="mobile-close" id="mobileClose" aria-label="Fermer le menu">&times;</button>
+  <a class="mlink" href="index.html"><span class="mnum">01</span>Accueil</a>
+  <a class="mlink" href="services.html"><span class="mnum">02</span>Services</a>
+  <a class="mlink" href="realisations.html"><span class="mnum">03</span>Réalisations</a>
+  <a class="mlink" href="contact.html"><span class="mnum">04</span>Contact</a>
+  <a href="contact.html" class="btn btn-blue">Devis gratuit</a>
+</div>
+
+<main class="page-enter">
+
+<!-- ======================= HERO PAGE ======================= -->
+<section class="page-hero canvas">
+  <img class="bg" src="assets/strip-enduit-facade.jpg" alt="Deux ouvriers Hamzi appliquant l'enduit sur une façade" fetchpriority="high">
+  <div class="ph-veil"></div>
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Accueil</a> · <span>Contact</span></p>
+    <h1>Contactez-nous</h1>
+    <p class="ph-sub">Pour toute demande d'information ou de devis, notre équipe est à votre disposition pour répondre à vos questions et vous accompagner dans la réalisation de votre projet. Nous nous engageons à vous fournir des conseils personnalisés et un service de qualité, adapté à vos besoins et à votre budget.</p>
+  </div>
+  <span class="ph-num" aria-hidden="true">04 / 04</span>
+</section>
+
+<!-- ======================= DEVIS ======================= -->
+<section class="section canvas light" id="devis">
+  <div class="wrap">
+    <div class="devis-grid">
+      <div class="devis-side reveal">
+        <p class="eyebrow">Devis gratuit</p>
+        <h2 style="margin-bottom:18px">Votre projet,<br>chiffré sans engagement.</h2>
+        <p class="lead">Que vous souhaitiez rafraîchir votre intérieur, améliorer l'isolation avec un faux plafond ou redonner un coup de neuf à votre façade, Hamzi Sàrl vous propose des solutions adaptées et un accompagnement sur-mesure pour un résultat à la hauteur de vos attentes.</p>
+        <ul>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Réponse rapide, conseils personnalisés</li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Devis détaillé, gratuit et sans engagement</li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Adapté à votre calendrier et votre budget</li>
+        </ul>
+        <div class="side-call">
+          <p>Vous préférez en parler de vive voix&nbsp;?</p>
+          <a href="tel:+41792860941">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +41 79 286 09 41
+          </a>
+        </div>
+      </div>
+
+      <form class="form-card reveal" id="devisForm" novalidate>
+        <div class="form-progress" aria-hidden="true">
+          <div class="seg curr" data-seg="1"><i></i></div>
+          <div class="seg" data-seg="2"><i></i></div>
+          <div class="seg" data-seg="3"><i></i></div>
+          <div class="seg" data-seg="4"><i></i></div>
+        </div>
+        <p class="form-step-label" id="stepLabel">Étape 1 sur 4</p>
+
+        <fieldset class="fstep active" data-step="1">
+          <legend style="position:absolute;left:-9999px">Type de travaux</legend>
+          <h3>Quels travaux envisagez-vous&nbsp;?</h3>
+          <p class="hint">Sélectionnez le type de projet.</p>
+          <div class="choices">
+            <div class="choice">
+              <input type="radio" name="type" id="t-peinture" value="Peinture intérieure">
+              <label for="t-peinture">
+                <span class="cic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="6" rx="1.5"/><path d="M17 5h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-9v2"/><rect x="9.5" y="12" width="3" height="9" rx="1"/></svg></span>
+                <b>Peinture</b>
+              </label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="type" id="t-facade" value="Rénovation de façade">
+              <label for="t-facade">
+                <span class="cic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M3 21h18"/><path d="M9 21v-6h6v6"/><path d="M7.5 12h2M14.5 12h2"/></svg></span>
+                <b>Façade</b>
+              </label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="type" id="t-plafond" value="Faux plafond">
+              <label for="t-plafond">
+                <span class="cic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18"/><path d="M5 5v3h14V5"/><path d="M8 8v2.5M16 8v2.5M12 8v2.5"/><circle cx="12" cy="14.5" r="1.6"/><path d="M12 16.1V19"/></svg></span>
+                <b>Faux plafond</b>
+              </label>
+            </div>
+            <div class="choice">
+              <input type="radio" name="type" id="t-gypserie" value="Gypserie et plâtrerie">
+              <label for="t-gypserie">
+                <span class="cic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l8.5 4.2L8.2 12.5 4 4z"/><path d="M10.3 10.4l9.2 9.2"/><path d="M18 16.5l3.2 3.2-2.5 2.5-3.2-3.2"/></svg></span>
+                <b>Gypserie</b>
+              </label>
+            </div>
+          </div>
+          <p class="err" id="typeErr" style="display:none;color:#C0392B;font-size:13.5px;margin-top:14px">Merci de sélectionner un type de travaux.</p>
+        </fieldset>
+
+        <fieldset class="fstep" data-step="2">
+          <legend style="position:absolute;left:-9999px">Pièce ou surface</legend>
+          <h3>Quelle pièce ou surface&nbsp;?</h3>
+          <p class="hint">Une indication suffit pour une première estimation.</p>
+          <div class="chips" style="margin-bottom:24px">
+            <div class="chip"><input type="radio" name="piece" id="p-salon" value="Salon / séjour"><label for="p-salon">Salon / séjour</label></div>
+            <div class="chip"><input type="radio" name="piece" id="p-cuisine" value="Cuisine"><label for="p-cuisine">Cuisine</label></div>
+            <div class="chip"><input type="radio" name="piece" id="p-sdb" value="Salle de bain"><label for="p-sdb">Salle de bain</label></div>
+            <div class="chip"><input type="radio" name="piece" id="p-chambre" value="Chambre"><label for="p-chambre">Chambre</label></div>
+            <div class="chip"><input type="radio" name="piece" id="p-escalier" value="Escalier / couloir"><label for="p-escalier">Escalier / couloir</label></div>
+            <div class="chip"><input type="radio" name="piece" id="p-facade" value="Façade complète"><label for="p-facade">Façade complète</label></div>
+            <div class="chip"><input type="radio" name="piece" id="p-tout" value="Logement complet"><label for="p-tout">Logement complet</label></div>
+            <div class="chip"><input type="radio" name="piece" id="p-autre" value="Autre"><label for="p-autre">Autre</label></div>
+          </div>
+          <div class="field">
+            <label for="surface">Surface approximative (m²) — facultatif</label>
+            <input type="number" id="surface" name="surface" min="1" max="10000" inputmode="numeric" placeholder="Ex. 45">
+          </div>
+        </fieldset>
+
+        <fieldset class="fstep" data-step="3">
+          <legend style="position:absolute;left:-9999px">Photo du projet</legend>
+          <h3>Une photo de votre projet&nbsp;?</h3>
+          <p class="hint">Facultatif, mais une photo nous aide à affiner l'estimation.</p>
+          <label class="upload" id="uploadZone" for="photo">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+            <div><b>Choisir une photo</b> ou glissez-la ici</div>
+            <div style="font-size:13px;margin-top:4px">JPG, PNG ou HEIC — max 10 Mo</div>
+            <div class="filename" id="fileName"></div>
+            <input type="file" id="photo" name="photo" accept="image/*">
+          </label>
+        </fieldset>
+
+        <fieldset class="fstep" data-step="4">
+          <legend style="position:absolute;left:-9999px">Vos coordonnées</legend>
+          <h3>Vos coordonnées</h3>
+          <p class="hint">Nous revenons vers vous rapidement.</p>
+          <div class="field" data-f="nom">
+            <label for="nom">Nom et prénom *</label>
+            <input type="text" id="nom" name="nom" autocomplete="name" required>
+            <p class="err">Merci d'indiquer votre nom.</p>
+          </div>
+          <div class="field" data-f="tel">
+            <label for="tel">Téléphone *</label>
+            <input type="tel" id="tel" name="tel" autocomplete="tel" placeholder="+41 79 ..." required>
+            <p class="err">Merci d'indiquer un numéro de téléphone valide.</p>
+          </div>
+          <div class="field" data-f="email">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="vous@exemple.ch" required>
+            <p class="err">Merci d'indiquer une adresse email valide.</p>
+          </div>
+          <div class="field">
+            <label for="message">Votre message — facultatif</label>
+            <textarea id="message" name="message" rows="3" placeholder="Décrivez brièvement votre projet, vos délais..."></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form-success" id="formSuccess" role="status">
+          <div class="ok">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3>Merci, votre demande est prête&nbsp;!</h3>
+          <p>Votre messagerie s'est ouverte avec le récapitulatif de votre projet. Envoyez simplement l'email, nous vous répondons rapidement.</p>
+          <p id="photoReminder" style="display:none;font-weight:600;color:var(--ink)">Pensez à joindre votre photo à l'email avant l'envoi.</p>
+          <p style="margin-top:14px">Ou appelez-nous directement&nbsp;: <a href="tel:+41792860941" style="color:var(--blue);font-weight:600">+41 79 286 09 41</a></p>
+        </div>
+
+        <div class="fnav" id="fnav">
+          <button type="button" class="btn-back" id="btnBack" hidden>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Précédent
+          </button>
+          <button type="button" class="btn btn-blue" id="btnNext">
+            Continuer
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTACT / CARTE ======================= -->
+<section class="section contact canvas" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Coordonnées</p>
+        <h2>Parlons de<br>votre projet.</h2>
+        <div class="c-items">
+          <div class="c-item">
+            <span class="cic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><b>Adresse</b><p>Route de l'Etraz 16, 1267 Vich, Suisse</p></div>
+          </div>
+          <div class="c-item">
+            <span class="cic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <div>
+              <b>Téléphone</b>
+              <a class="val" href="tel:+41792860941">+41 79 286 09 41</a>
+              <a class="val" href="tel:+41223622839">+41 22 362 28 39</a>
+            </div>
+          </div>
+          <div class="c-item">
+            <span class="cic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></span>
+            <div><b>Email</b><a class="val" href="mailto:contact@hamzi.ch">contact@hamzi.ch</a></div>
+          </div>
+          <div class="c-item">
+            <span class="cic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+            <div><b>Horaires</b><p>Lundi – Vendredi, 7h – 17h</p></div>
+          </div>
+        </div>
+        <!-- Emplacement prise de RDV en ligne : remplacer le contenu ci-dessous par le widget Calendly
+             <div class="calendly-inline-widget" data-url="https://calendly.com/VOTRE-LIEN" style="min-width:320px;height:700px"></div>
+             <script src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
+        <div class="rdv reveal">
+          <div>
+            <b>Prise de rendez-vous en ligne</b>
+            <p>Bientôt disponible — en attendant, appelez-nous.</p>
+          </div>
+          <a href="tel:+41792860941" class="btn btn-white">Appeler maintenant</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <div id="leafletMap" role="img" aria-label="Plan d'accès — Hamzi Sàrl, Route de l'Etraz 16, 1267 Vich"></div>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Route%20de%20l'Etraz%2016%2C%201267%20Vich%2C%20Suisse" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Itinéraire — Google Maps
+        </a>
+      </div>
+    </div>
+    <div class="ou reveal">
+      <h3>Où sommes-nous&nbsp;?</h3>
+      <div class="txt">
+        <p>Nous sommes situés dans la région de <strong>La Côte</strong>, plus précisément dans le <strong>district de Nyon</strong> et la région de <strong>Terre-Sainte</strong>. Notre zone d'intervention couvre l'ensemble de ces secteurs, où nous proposons nos services de <strong>peinture, gypserie, rénovation de façades et installation de faux plafonds</strong>.</p>
+        <p>Grâce à notre proximité avec nos clients, nous assurons une réactivité optimale et un suivi rigoureux de chaque projet. Que vous soyez un particulier ou un professionnel, nous nous déplaçons dans toute la région pour vous offrir des prestations de haute qualité.</p>
+        <p style="font-size:14px;color:var(--grey-light)">N'hésitez pas à nous contacter pour discuter de vos attentes et obtenir une estimation sur mesure. Votre satisfaction est notre priorité, et nous mettons tout en œuvre pour garantir un travail soigné, fiable et à la hauteur de vos exigences.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer canvas">
+  <p class="footer-mega reveal" aria-hidden="true">HAMZI</p>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="fbrand">HAMZI <span>Sàrl</span></p>
+        <p style="margin-top:14px">Gypserie, peinture, faux plafonds et rénovation de façades. Région de La Côte, district de Nyon et Terre-Sainte.</p>
+        <p style="margin-top:14px;font-size:13.5px;letter-spacing:.06em;color:rgba(255,255,255,.45)">« Votre confiance et notre engagement »</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html">Demander un devis</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Route de l'Etraz 16, 1267 Vich</li>
+          <li><a href="tel:+41792860941">+41 79 286 09 41</a></li>
+          <li><a href="tel:+41223622839">+41 22 362 28 39</a></li>
+          <li><a href="mailto:contact@hamzi.ch">contact@hamzi.ch</a></li>
+          <li>Lun – Ven, 7h – 17h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Hamzi Sàrl — Tous droits réservés</span>
+      <span>Gypserie · Peinture · Faux plafonds · Façades</span>
+    </div>
+  </div>
+</footer>
+
+<div class="float-actions">
+  <a class="fab wa" href="https://wa.me/41792860941" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+  <a class="fab call" href="tel:+41792860941" aria-label="Appeler Hamzi Sàrl">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

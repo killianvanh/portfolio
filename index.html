@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Killian Vanhoof — Création de sites web | Suisse romande</title>
+<meta name="description" content="Sites web sur mesure pour PME, artisans et indépendants de Suisse romande. Quelques réalisations récentes." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#0C151E; --navy-2:#11202D; --gold:#C9A36A; --cream:#F4EFE7;
+    --muted:#9FB0BD; --line:rgba(201,163,106,.25);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:var(--navy); color:var(--cream);
+    -webkit-font-smoothing:antialiased; line-height:1.6;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  header{padding:90px 0 54px;text-align:center}
+  .overline{
+    font-size:13px;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--gold);font-weight:600;margin-bottom:22px
+  }
+  h1{
+    font-family:'Fraunces',serif;font-weight:500;
+    font-size:clamp(38px,6vw,68px);line-height:1.05;letter-spacing:-.5px;
+    margin-bottom:20px
+  }
+  .tagline{
+    max-width:620px;margin:0 auto;font-size:clamp(16px,2vw,19px);
+    color:var(--muted)
+  }
+  .rule{width:64px;height:1px;background:var(--gold);margin:34px auto 0;opacity:.6}
+
+  .grid{
+    display:grid;gap:22px;padding:8px 0 40px;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr))
+  }
+  .card{
+    position:relative;display:block;overflow:hidden;border-radius:14px;
+    min-height:340px;text-decoration:none;color:var(--cream);
+    border:1px solid rgba(255,255,255,.06);
+    background:var(--navy-2);
+    transition:transform .45s cubic-bezier(.2,.7,.2,1), box-shadow .45s
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(0,0,0,.45)}
+  .card .bg{
+    position:absolute;inset:0;background-size:cover;background-position:center;
+    transition:transform .8s cubic-bezier(.2,.7,.2,1);transform:scale(1.02)
+  }
+  .card:hover .bg{transform:scale(1.08)}
+  .card .veil{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(8,14,20,.15) 0%,rgba(8,14,20,.55) 52%,rgba(8,14,20,.92) 100%)
+  }
+  .card .body{position:absolute;left:0;right:0;bottom:0;padding:26px 26px 28px}
+  .tag{
+    display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--gold);font-weight:600;margin-bottom:10px
+  }
+  .card h2{
+    font-family:'Fraunces',serif;font-weight:500;font-size:25px;line-height:1.15;margin-bottom:6px
+  }
+  .card .sector{font-size:14px;color:var(--muted);margin-bottom:16px}
+  .see{
+    font-size:14px;font-weight:600;color:var(--cream);
+    display:inline-flex;align-items:center;gap:8px
+  }
+  .see .arw{transition:transform .35s}
+  .card:hover .see .arw{transform:translateX(6px)}
+
+  footer{
+    border-top:1px solid var(--line);margin-top:30px;
+    padding:34px 0 70px;text-align:center;color:var(--muted);font-size:14px
+  }
+  footer .name{color:var(--cream);font-weight:600}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="overline">Portfolio</div>
+      <h1>Killian Vanhoof</h1>
+      <p class="tagline">Je conçois des sites web sur mesure pour les PME, artisans et indépendants de Suisse romande. Voici quelques réalisations récentes.</p>
+      <div class="rule"></div>
+    </header>
+
+    <main class="grid">
+      <a class="card" href="leroy/index.html">
+        <div class="bg" style="background-image:url('leroy/assets/hero-1280.webp')"></div>
+        <div class="veil"></div>
+        <div class="body">
+          <span class="tag">Architecture</span>
+          <h2>Philippe Le Roy Architectes</h2>
+          <div class="sector">Architecture résidentielle &amp; publique · Nyon</div>
+          <span class="see">Voir le site <span class="arw">&rarr;</span></span>
+        </div>
+      </a>
+
+      <a class="card" href="https://fantastic-eclair-ae7098.netlify.app" target="_blank" rel="noopener">
+        <div class="bg" style="background-image:url('atelier94-hero.jpg')"></div>
+        <div class="veil"></div>
+        <div class="body">
+          <span class="tag">Architecture</span>
+          <h2>Atelier 94 Architecture</h2>
+          <div class="sector">Architecture sur mesure · La Côte</div>
+          <span class="see">Voir le site <span class="arw">&rarr;</span></span>
+        </div>
+      </a>
+
+      <a class="card" href="espace-bleu/index.html">
+        <div class="bg" style="background-image:url('espace-bleu/assets/pool-garden.jpg')"></div>
+        <div class="veil"></div>
+        <div class="body">
+          <span class="tag">Piscines &amp; spas</span>
+          <h2>Espace Bleu</h2>
+          <div class="sector">Piscines, spas &amp; saunas sur mesure · Vaud-Genève</div>
+          <span class="see">Voir le site <span class="arw">&rarr;</span></span>
+        </div>
+      </a>
+
+      <a class="card" href="sp/index.html">
+        <div class="bg" style="background-image:url('sp/assets/hero.jpg')"></div>
+        <div class="veil"></div>
+        <div class="body">
+          <span class="tag">Technique du bâtiment</span>
+          <h2>SP Ventilation</h2>
+          <div class="sector">Ventilation, climatisation &amp; pompe à chaleur · Suisse romande</div>
+          <span class="see">Voir le site <span class="arw">&rarr;</span></span>
+        </div>
+      </a>
+
+      <a class="card" href="hamzi/index.html">
+        <div class="bg" style="background-image:url('hamzi/assets/hero.jpg')"></div>
+        <div class="veil"></div>
+        <div class="body">
+          <span class="tag">Second œuvre</span>
+          <h2>Hamzi Sàrl</h2>
+          <div class="sector">Gypserie, peinture &amp; rénovation de façades · La Côte</div>
+          <span class="see">Voir le site <span class="arw">&rarr;</span></span>
+        </div>
+      </a>
+    </main>
+
+    <footer>
+      <div class="name">Killian Vanhoof</div>
+      Création de sites web · Suisse romande
+    </footer>
+  </div>
+</body>
+</html>
