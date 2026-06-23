@@ -173,5 +173,15 @@
       Création de sites web · Suisse romande
     </footer>
   </div>
+  <script>
+    /* Les démos Le Roy & Hamzi affichent un préloader d'intro qui masque
+       l'animation des titres au 1er affichage (visible seulement après refresh).
+       On pré-arme leur flag de session (même origine, même onglet) pour que
+       la démo saute ce préloader et joue ses animations immédiatement. */
+    try {
+      sessionStorage.setItem('lr-seen', '1');
+      sessionStorage.setItem('hz-seen', '1');
+    } catch (e) {}
+  </script>
 </body>
 </html>
